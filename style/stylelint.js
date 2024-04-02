@@ -5,6 +5,7 @@ module.exports = {
     'stylelint-config-recommended-vue/scss'
   ],
   rules: {
-    'scss/at-import-partial-extension': 'off'
+    'scss/at-import-partial-extension': null,
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }]
   }
 }
